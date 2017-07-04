@@ -20,7 +20,7 @@ public class MainActivity extends Activity implements MainActivityContract.View{
     super.onCreate(savedInstanceState);
     ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
     MainActivityPresenter mainActivityPresenter = new MainActivityPresenter(this);
-    TemperatureData temperatureData = new TemperatureData("Hamburg", "15");
+    TemperatureData temperatureData = new TemperatureData("Hamburg", "10");
     binding.setTemp(temperatureData);
     binding.setPresenter(mainActivityPresenter);
   }
